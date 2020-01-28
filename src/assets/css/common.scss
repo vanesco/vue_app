@@ -1,0 +1,175 @@
+.wrap {
+  position: relative;
+}
+.inner {
+  position: relative;
+  max-width: 94%;
+  margin: 0 auto;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
+  color: #fff;
+  z-index: 1000;
+  transition: all 0.3s;
+  h1 {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    span {
+      font-weight: 100;
+    }
+  }
+  nav.static {
+    position: absolute;
+    top: 2.4rem;
+    right: 0;
+    ul:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    li {
+      float: left;
+      margin: 0 0 0 5rem;
+      font-size: 1.6rem;
+    }
+  }
+  nav {
+    position: absolute;
+    top: 10rem;
+    right: 1rem;
+    z-index: 1000;
+    ul {
+      li {
+        font-size: 4rem;
+        opacity: 0.7;
+      }
+    }
+    .mobileNavUtil {
+      position: fixed;
+      bottom: 5%;
+      left: 50%;
+      width: 80%;
+      margin: 0 0 0 -40%;
+      text-align: center;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  nav.home .home,
+  nav.careers .careers,
+  nav.work .work,
+  nav.contact .contact {
+    font-weight: 600;
+    opacity: 1;
+  }
+  .memu-btn {
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .memu-btn span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    display: block;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  .memu-btn span:nth-child(1) {
+    top: 0px;
+  }
+  .memu-btn span:nth-child(2) {
+    top: 11px;
+  }
+  .memu-btn span:nth-child(3) {
+    top: 22px;
+  }
+}
+.header_home {
+  background: transparent;
+}
+.header_careers {
+  background: #313955;
+}
+.header_work {
+  background: #007eff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.header_contact {
+  background: #35a67d;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.desktop.headerScrollColor,
+.laptop.headerScrollColor,
+.tablet.headerScrollColor {
+  color: #222 !important;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.mobile.headerScrollColor {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.mobile.headerScrollColor h1 {
+  color: #222;
+}
+.mobile.headerScrollColor .memu-btn span,
+.tablet.headerScrollColor .memu-btn span {
+  background: #222;
+}
+.mobile.headerScrollColor .memu-btn span.menuBtnColor,
+.tablet.headerScrollColor .memu-btn span.menuBtnColor {
+  background: #fff;
+}
+
+#footer {
+  padding: 1.2rem 0;
+  background: #f0f0f0;
+  font-size: 1.2rem;
+  text-align: center;
+  clear: both;
+}
+
+html.open {
+  overflow: hidden;
+}
+.page_cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+}
