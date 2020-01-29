@@ -3,7 +3,7 @@
     id="header"
     :class=" [ $mq, 'header', 'header_'+ this.$store.state.navActive, {headerScrollColor: headerIsWhite} ] "
   >
-    <div class="page_cover" v-if="pageCoverShow"></div>
+    <div class="page_cover" @click="pageCoverClose" v-if="pageCoverShow"></div>
 
     <div class="inner">
       <h1 @click="makeActive('home')">
@@ -181,6 +181,33 @@ export default {
     },
     makeActive(item) {
       this.$store.commit("makeActive", item);
+    },
+    pageCoverClose() {
+      this.navSeen = false;
+      this.btnIsWhite = false;
+      this.pageCoverShow = false;
+      this.mobileNavUtil = false;
+
+      $("html").removeClass("open");
+      $(".wrap").css("position", "relative");
+      $(".memu-btn span")
+        .eq(0)
+        .css({
+          top: "0",
+          transform: "rotate(0)"
+        });
+      $(".memu-btn span")
+        .eq(1)
+        .css({
+          opacity: "1",
+          transform: "translate(0)"
+        });
+      $(".memu-btn span")
+        .eq(2)
+        .css({
+          top: "22px",
+          transform: "rotate(0)"
+        });
     }
   }
 };
