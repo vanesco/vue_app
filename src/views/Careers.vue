@@ -48,7 +48,7 @@
           <img src="../assets/img/careers_2013.png" alt />
           <dl>
             <dt>CMSG 기업 홈페이지</dt>
-            <dd>퍼블리싱</dd>
+            <dd>PC웹 / 퍼블리싱</dd>
             <dt>U2HOME 쇼핑몰</dt>
             <dd>메이크샵 솔루션 리뉴얼 / 유지 보수</dd>
           </dl>
@@ -66,7 +66,7 @@
           <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2014.png" alt />
           <dl>
             <dt>KBS 공제회 B2B 사이트</dt>
-            <dd>퍼블리싱</dd>
+            <dd>PC웹 / 퍼블리싱</dd>
             <dt>한국 가스 안전공사 B2B 사이트</dt>
             <dd>퍼블리싱</dd>
           </dl>
@@ -83,7 +83,7 @@
           <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2015.png" alt />
           <dl>
             <dt>카탈로그 프로모션 사이트</dt>
-            <dd>디자인 / UI 기획 개발 / 퍼블리싱</dd>
+            <dd>PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱</dd>
             <dt>명함천국 온라인 쇼핑몰</dt>
             <dd>리뉴얼 / UI 개발 / 퍼블리싱 / 유지보수</dd>
           </dl>
@@ -99,7 +99,7 @@
           <h3>2016</h3>
           <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2016.png" alt />
           <dl>
-            <dt>오피스디포 B2B 사이트</dt>
+            <dt>PC웹 / 오피스디포 B2B 사이트</dt>
             <dd>퍼블리싱</dd>
           </dl>
         </div>
@@ -115,7 +115,7 @@
           <img src="../assets/img/careers_2017.png" alt />
           <dl>
             <dt>이슈터 프로모션 사이트</dt>
-            <dd>디자인 / UI 기획 개발 / 퍼블리싱</dd>
+            <dd>PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱</dd>
             <dt>온라인 방송 서비스</dt>
             <dd>퍼블리싱 / 유지보수</dd>
           </dl>
@@ -132,7 +132,7 @@
           <img :style="{width: '40%'}" src="../assets/img/careers_2018.png" alt />
           <dl>
             <dt>HI FLYER 디지털 전단지</dt>
-            <dd>디자인 / UI 기획 개발 / 퍼블리싱</dd>
+            <dd>모바일웹 / 디자인 / UI 기획 개발 / 퍼블리싱</dd>
             <dt>온라인 방송 서비스 모바일웹</dt>
             <dd>UI 개발 / 퍼블리싱</dd>
           </dl>
@@ -149,7 +149,7 @@
           <img src="../assets/img/careers_2019.png" alt />
           <dl>
             <dt>플래닛팡 기업 홈페이지</dt>
-            <dd>UI 기획 개발 / 퍼블리싱</dd>
+            <dd>반응형 / UI 기획 개발 / 퍼블리싱</dd>
           </dl>
         </div>
       </div>

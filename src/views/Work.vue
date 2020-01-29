@@ -153,31 +153,31 @@ export default {
         {
           img: "work_11",
           title: "LOGO 디자인 사이트 ",
-          text: "기획 디자인",
+          text: "UI 기획 / 디자인",
           url: "http://leehyojun.com/logoidDesign.html"
         },
         {
           img: "work_12",
           title: "PRINT21 인쇄물 쇼핑몰",
-          text: "기획 디자인",
+          text: "UI 기획 / 디자인",
           url: "http://leehyojun.com/print21Design.html"
         },
         {
           img: "work_13",
           title: "HI FLYER 디지털 전단지",
-          text: "기획 디자인",
+          text: "UI 기획 / 디자인",
           url: "http://leehyojun.com/hiFlyerDesign.html"
         },
         {
           img: "work_14",
           title: "스냅샷 모바일 인쇄물 주문 앱",
-          text: "기획 디자인",
+          text: "UI 기획 / 디자인",
           url: "http://leehyojun.com/snapShotDesign.html"
         },
         {
           img: "work_15",
           title: "NAME BIZ 디지털 명함 앱",
-          text: "기획 디자인",
+          text: "UI 기획 / 디자인",
           url: "http://leehyojun.com/nameBizDesign.html"
         }
       ]
