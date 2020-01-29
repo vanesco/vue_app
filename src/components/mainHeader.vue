@@ -84,11 +84,7 @@ export default {
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
     window.addEventListener("scroll", this.handleScroll);
-    this.handleScroll();
-    
     window.addEventListener("touchmove", this.pageCoverClose);
-    this.pageCoverClose();
-
     window.addEventListener("popstate", this.historyChange);
   },
   destroyed() {
