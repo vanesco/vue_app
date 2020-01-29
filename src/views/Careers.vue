@@ -156,6 +156,8 @@
     </div>
 
     <div class="bg-year" v-if="bgShow" :class="$mq">{{year}}</div>
+
+    <main-footer />
   </div>
 </template>
 

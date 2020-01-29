@@ -79,6 +79,8 @@
         </div>
       </div>
     </div>
+
+    <main-footer />
   </div>
 </template>
 
@@ -109,8 +111,7 @@ export default {
           .css({
             border: "3px solid #35a67d"
           })
-          .attr("placeholder", "이메일 주소를 확인하세요")
-          .focus();
+          .attr("placeholder", "이메일 주소를 확인하세요");
       } else {
         $(event.target).css({
           border: "1px solid #ddd"
@@ -123,8 +124,7 @@ export default {
           .css({
             border: "3px solid #35a67d"
           })
-          .attr("placeholder", "제목을 입력하세요")
-          .focus();
+          .attr("placeholder", "제목을 입력하세요");
       } else {
         $(event.target).css({
           border: "1px solid #ddd"
@@ -137,8 +137,7 @@ export default {
           .css({
             border: "3px solid #35a67d"
           })
-          .attr("placeholder", "내용을 입력하세요")
-          .focus();
+          .attr("placeholder", "내용을 입력하세요");
       } else {
         $(event.target).css({
           border: "1px solid #ddd"
@@ -146,55 +145,42 @@ export default {
       }
     },
     formSubmit() {
-      let email = this.email;
-      let title = this.title;
-      let message = this.message;
-
-      if (email == "" || title == "" || message == "") {
-        if (email == "") {
-          $("input[name=email]")
-            .css({
-              border: "3px solid #35a67d"
-            })
-            .attr("placeholder", "이메일을 입력하세요")
-            .focus();
-        }
-        if (title == "") {
-          $("input[name=title]")
-            .css({
-              border: "3px solid #35a67d"
-            })
-            .attr("placeholder", "제목을 입력하세요")
-            .focus();
-        }
-        if (message == "") {
-          $("textarea")
-            .css({
-              border: "3px solid #35a67d"
-            })
-            .attr("placeholder", "내용을 입력하세요")
-            .focus();
-        }
-      } else {
-        if (confirm("보내시겠습니까?")) {
-          this.$http
-            .post("/boards", {
-              email: this.email,
-              title: this.title,
-              message: this.message
-            })
-            .then(response => {
-              alert("보내기 성공!");
-              this.isShow = false;
-              this.email = "";
-              this.title = "";
-              this.message = "";
-              console.log(response);
-            })
-            .catch(error => {
-              console.log(error);
-            });
-        }
+      if (this.email == "") {
+        $("input[name=email]")
+          .css({
+            border: "3px solid #35a67d"
+          })
+          .attr("placeholder", "이메일을 입력하세요");
+      } else if (this.title == "") {
+        $("input[name=title]")
+          .css({
+            border: "3px solid #35a67d"
+          })
+          .attr("placeholder", "제목을 입력하세요");
+      } else if (this.message == "") {
+        $("textarea")
+          .css({
+            border: "3px solid #35a67d"
+          })
+          .attr("placeholder", "내용을 입력하세요");
+      } else if (confirm("보내시겠습니까?")) {
+        this.$http
+          .post("/boards", {
+            email: this.email,
+            title: this.title,
+            message: this.message
+          })
+          .then(response => {
+            alert("보내기 성공!");
+            this.isShow = false;
+            this.email = "";
+            this.title = "";
+            this.message = "";
+            console.log(response);
+          })
+          .catch(error => {
+            console.log(error);
+          });
       }
     }
   },
@@ -347,6 +333,7 @@ export default {
     height: 20rem;
     padding: 1rem;
     box-sizing: border-box;
+    border: 1px solid #ddd;
     resize: none;
   }
   input[type="submit"] {

@@ -1,12 +1,9 @@
 <template>
   <div class="home container">
     <transition name="fade" appear>
-      <div
-        class="main-visual"
-        :style="{backgroundImage: 'url(' + require('../assets/img/' + 'particle-background.jpg') + ')' }"
-      >
+      <div class="main-visual">
         <vue-particles
-          :style="[ {width: particlesWidth + 'px'}, { height: particlesHeight + 'px' } ]"
+          :style="[ {width: particlesWidth + 'px'}, { height: particlesHeight + 'px' }, {backgroundImage: 'url(' + require('../assets/img/' + 'particle-background.jpg') + ')' }, {backgroundSize: 'cover'} ]"
           color="#666666"
           :particleOpacity="0.7"
           :particlesNumber="120"
@@ -170,7 +167,12 @@
         <img src="../assets/img/advantage_img.png" alt class="visual" :class="$mq" />
       </div>
     </div>
+
+    <main-footer />
   </div>
+
+  
+
 </template>
 
 <script>
@@ -320,7 +322,6 @@ export default {
 <style lang="scss" scoped>
 .main-visual {
   position: relative;
-  background-size: cover;
   overflow: hidden;
   .visual-text {
     position: absolute;

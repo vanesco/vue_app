@@ -71,6 +71,8 @@
         </li>
       </ul>
     </div>
+
+    <main-footer />
   </div>
 </template>
 
@@ -245,6 +247,7 @@ export default {
 }
 
 .contents {
+  min-height: 100vh;
   ul {
     width: 75%;
     padding: 13rem 0 8rem 0;
