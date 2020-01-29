@@ -3,7 +3,7 @@
     <transition name="fade" appear>
       <div class="main-visual">
         <vue-particles
-          :style="[ {width: particlesWidth + 'px'}, { height: particlesHeight + 'px' }, {backgroundImage: 'url(' + require('../assets/img/' + 'particle-background.jpg') + ')' }, {backgroundSize: 'cover'} ]"
+          :style="[ {width: particlesWidth + 'px'}, { height: particlesHeight + 'px' }, {backgroundImage: 'url(' + require('../assets/img/' + 'particle-background.jpg') + ')' }, {backgroundSize: 'cover'}, {backgroundColor: '#1e1010'} ]"
           color="#666666"
           :particleOpacity="0.7"
           :particlesNumber="120"
