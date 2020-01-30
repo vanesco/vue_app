@@ -2,10 +2,10 @@
   <div class="admin container">
     <div class="contents" :class="$mq">
       <ul>
-        <li v-for="(index, item) in boardData" :key="index">
+        <li v-for="(item, index) in boardData" :key="index">
           <span>
             <em>id</em>
-            {{item.id}}
+            {{item._id}}
           </span>
           <span>
             <em>email</em>
