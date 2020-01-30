@@ -171,15 +171,14 @@ export default {
             message: this.message
           })
           .then(response => {
-            alert("보내기 성공!");
+            alert("메세지를 보냈습니다.");
             this.isShow = false;
             this.email = "";
             this.title = "";
             this.message = "";
-            console.log(response);
           })
           .catch(error => {
-            console.log(error);
+            alert('보내기 실패');
           });
       }
     }

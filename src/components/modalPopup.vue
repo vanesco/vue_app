@@ -24,7 +24,6 @@ export default {
   width: 100%;
   height: 100%;
   overflow: auto;
-  // background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 10000;
   .pop_content {

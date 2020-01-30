@@ -37,5 +37,11 @@ export default new Router({
       component: () =>
         import("@/views/Contact.vue")
     },
+    {
+      path: "/admin",
+      name: "admin",
+      component: () =>
+        import("@/views/Admin.vue")
+    },
   ]
 });

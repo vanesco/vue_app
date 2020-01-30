@@ -10,9 +10,7 @@
         <p :class="$mq">
           경험은 실수를 거듭해야만 서서히 알게 된다.
           <br />
-          <span :class="$mq">
-            다각적인 시선과 긍정의 마음, 경험하고 있는 것에 의미를 부여하고 세상에 다양한 것들에 관심을 가지는 것들로 배우고 성장합니다.
-          </span>
+          <span :class="$mq">다각적인 시선과 긍정의 마음, 경험하고 있는 것에 의미를 부여하고 세상에 다양한 것들에 관심을 가지는 것들로 배우고 성장합니다.</span>
         </p>
       </div>
     </transition>
@@ -223,9 +221,7 @@ export default {
         this.bgShow = true;
       }
 
-
       if (year2013 < scrollY) {
-        // this.bgShow = true;
         this.year = 2013;
         this.isStatic = true;
         this.navActive = "year2013";
@@ -458,7 +454,6 @@ export default {
     width: 100%;
     margin: 0 0 0 -50%;
     font-size: 15rem;
-    
   }
 }
 </style>

@@ -170,9 +170,6 @@
 
     <main-footer />
   </div>
-
-  
-
 </template>
 
 <script>
@@ -310,7 +307,6 @@ export default {
     },
     itemHover(index) {
       this.overIndex = index;
-      console.log(index);
     },
     itemOut() {
       this.overIndex = -1;

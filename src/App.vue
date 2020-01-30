@@ -4,7 +4,6 @@
       <main-header />
       <router-view />
       <button v-if="topBtnSeen" type="button" class="go-top" @click="scrollTop()">top</button>
-      <!-- <main-footer /> -->
     </div>
   </div>
 </template>
