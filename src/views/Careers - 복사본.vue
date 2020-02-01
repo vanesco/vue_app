@@ -175,13 +175,6 @@ export default {
       ],
       navActive: "year2013",
       isStatic: false,
-      year2013Offset: "",
-      year2014Offset: "",
-      year2015Offset: "",
-      year2016Offset: "",
-      year2017Offset: "",
-      year2018Offset: "",
-      year2019Offset: "",
       bgShow: false,
       year: 2013
     };
@@ -191,14 +184,6 @@ export default {
   },
   mounted() {
     window.scrollTo(0, 0);
-
-    this.year2013Offset = document.getElementById("year2013").offsetTop - 250;
-    this.year2014Offset = document.getElementById("year2014").offsetTop - 250;
-    this.year2015Offset = document.getElementById("year2015").offsetTop - 250;
-    this.year2016Offset = document.getElementById("year2016").offsetTop - 250;
-    this.year2017Offset = document.getElementById("year2017").offsetTop - 250;
-    this.year2018Offset = document.getElementById("year2018").offsetTop - 250;
-    this.year2019Offset = document.getElementById("year2019").offsetTop - 250;
 
     let bg = document.querySelector("article");
     $("body").on("mousewheel", function(e) {
@@ -215,9 +200,17 @@ export default {
       this.navActive = id;
     },
     yearScroll() {
+      let year2013 = document.getElementById("year2013").offsetTop - 60;
+      let year2014 = document.getElementById("year2014").offsetTop - 800;
+      let year2015 = document.getElementById("year2015").offsetTop - 800;
+      let year2016 = document.getElementById("year2016").offsetTop - 800;
+      let year2017 = document.getElementById("year2017").offsetTop - 800;
+      let year2018 = document.getElementById("year2018").offsetTop - 800;
+      let year2019 = document.getElementById("year2019").offsetTop - 800;
+
       let scrollY = window.pageYOffset;
 
-      if (this.year2013Offset > scrollY) {
+      if (year2013 > scrollY) {
         this.bgShow = false;
         this.year = 2013;
         this.isStatic = false;
@@ -228,34 +221,34 @@ export default {
         this.bgShow = true;
       }
 
-      if (this.year2013Offset < scrollY) {
+      if (year2013 < scrollY) {
         this.year = 2013;
         this.isStatic = true;
         this.navActive = "year2013";
       }
-      if (this.year2014Offset < scrollY) {
+      if (year2014 < scrollY) {
         this.year = 2014;
         this.isStatic = true;
         this.navActive = "year2014";
       }
-      if (this.year2015Offset < scrollY) {
+      if (year2015 < scrollY) {
         this.year = 2015;
         this.navActive = "year2015";
       }
 
-      if (this.year2016Offset < scrollY) {
+      if (year2016 < scrollY) {
         this.year = 2016;
         this.navActive = "year2016";
       }
-      if (this.year2017Offset < scrollY) {
+      if (year2017 < scrollY) {
         this.year = 2017;
         this.navActive = "year2017";
       }
-      if (this.year2018Offset < scrollY) {
+      if (year2018 < scrollY) {
         this.year = 2018;
         this.navActive = "year2018";
       }
-      if (this.year2019Offset < scrollY) {
+      if (year2019 < scrollY) {
         this.year = 2019;
         this.navActive = "year2019";
       }
@@ -399,7 +392,6 @@ export default {
     height: 100vh;
     margin: 2rem 0;
     padding: 15rem 3rem;
-    box-sizing: border-box;
     z-index: 2;
     &.mobile {
       width: 100%;
