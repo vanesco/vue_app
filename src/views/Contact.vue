@@ -178,7 +178,7 @@ export default {
             this.message = "";
           })
           .catch(error => {
-            alert('보내기 실패');
+            alert("보내기 실패");
           });
       }
     }
@@ -316,8 +316,7 @@ export default {
     font-size: 3rem;
     text-align: center;
     padding: 0 0 1rem 0;
-    margin: 0 0 7rem 0;
-    border-bottom: 2px solid #222;
+    margin: 0 0 3rem 0;
   }
   input[type="text"] {
     width: 100%;
