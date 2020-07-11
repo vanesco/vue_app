@@ -161,10 +161,6 @@
           <h3>2020</h3>
           <img src="../assets/img/careers_2020.png" alt />
           <dl>
-            <dt>와칸</dt>
-            <dd>PC웹 / 퍼블리싱 / UI 개발</dd>
-          </dl>
-          <dl>
             <dt>소소한 진심</dt>
             <dd>PC웹 / 모바일웹 / 퍼블리싱 / UI 개발</dd>
           </dl>
