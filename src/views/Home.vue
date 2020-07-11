@@ -34,7 +34,7 @@
         <div class="git-link" :class="$mq">
           <div class="button_base roll_3d">
             <div>
-              <a href="https://github.com/vanesco?tab=repositories" target="blink">Confirmation</a>
+              <a href="https://github.com/vanesco/vue_app" target="blink">Confirmation</a>
             </div>
 
             <div
@@ -42,7 +42,7 @@
             >
               <a
                 style="height: 50px; text-indent: -9999px;"
-                href="https://github.com/vanesco?tab=repositories"
+                href="https://github.com/vanesco/vue_app"
                 target="blink"
               >github</a>
             </div>

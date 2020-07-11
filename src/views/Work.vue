@@ -90,6 +90,42 @@ export default {
       overIndex: -1,
       listItem: [
         {
+          img: "wakan",
+          title: "와칸",
+          text: "PC웹 / 퍼블리싱 / UI 개발",
+          url: "http://leehyojun.com/wakan.html"
+        },
+        {
+          img: "soso",
+          title: "소소한 진심",
+          text: "PC웹 / 퍼블리싱 / UI 개발",
+          url: "http://leehyojun.com/soso.html"
+        },
+        {
+          img: "soso_m",
+          title: "소소한 진심 모바일",
+          text: "모바일웹 / 퍼블리싱 / UI 개발",
+          url: "http://leehyojun.com/soso_m.html"
+        },
+        {
+          img: "celebme",
+          title: "셀럽미",
+          text: "PC웹 / 퍼블리싱",
+          url: "http://leehyojun.com/celebme.html"
+        },
+        {
+          img: "celebme_m",
+          title: "셀럽미 모바일",
+          text: "모바일웹 / 퍼블리싱",
+          url: "http://leehyojun.com/celebme_m.html"
+        },
+        {
+          img: "esMall",
+          title: "에스더몰",
+          text: "하이브리드앱 / 퍼블리싱",
+          url: "http://leehyojun.com/esMall.html"
+        },
+        {
           img: "work_01",
           title: "플래닛팡 기업 홈페이지",
           text: "반응형 / UI 기획 개발 / 퍼블리싱",

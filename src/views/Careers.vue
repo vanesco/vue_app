@@ -150,6 +150,33 @@
             <dd>반응형 / UI 기획 개발 / 퍼블리싱</dd>
           </dl>
         </div>
+        <div
+          id="year2020"
+          class="year-box right"
+          :class="$mq"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
+          <h3>2020</h3>
+          <img src="../assets/img/careers_2020.png" alt />
+          <dl>
+            <dt>와칸</dt>
+            <dd>PC웹 / 퍼블리싱 / UI 개발</dd>
+          </dl>
+          <dl>
+            <dt>소소한 진심</dt>
+            <dd>PC웹 / 모바일웹 / 퍼블리싱 / UI 개발</dd>
+          </dl>
+          <dl>
+            <dt>셀럽미</dt>
+            <dd>PC웹 / 모바일웹 / 퍼블리싱</dd>
+          </dl>
+          <dl>
+            <dt>에스더몰</dt>
+            <dd>하이브리드앱 / 퍼블리싱</dd>
+          </dl>
+        </div>
       </div>
     </div>
 
@@ -171,7 +198,8 @@ export default {
         { name: "2016", id: "year2016" },
         { name: "2017", id: "year2017" },
         { name: "2018", id: "year2018" },
-        { name: "2019", id: "year2019" }
+        { name: "2019", id: "year2019" },
+        { name: "2020", id: "year2020" }
       ],
       navActive: "year2013",
       isStatic: false,
@@ -182,6 +210,7 @@ export default {
       year2017Offset: "",
       year2018Offset: "",
       year2019Offset: "",
+      year2020Offset: "",
       bgShow: false,
       year: 2013
     };
@@ -199,6 +228,7 @@ export default {
     this.year2017Offset = document.getElementById("year2017").offsetTop - 250;
     this.year2018Offset = document.getElementById("year2018").offsetTop - 250;
     this.year2019Offset = document.getElementById("year2019").offsetTop - 250;
+    this.year2020Offset = document.getElementById("year2020").offsetTop - 250;
 
     let bg = document.querySelector("article");
     $("body").on("mousewheel", function(e) {
@@ -258,6 +288,10 @@ export default {
       if (this.year2019Offset < scrollY) {
         this.year = 2019;
         this.navActive = "year2019";
+      }
+      if (this.year2020Offset < scrollY) {
+        this.year = 2020;
+        this.navActive = "year2020";
       }
     }
   },
@@ -347,7 +381,7 @@ export default {
     align-items: center;
     align-content: center;
     li {
-      width: 14%;
+      width: 12.5%;
       padding: 1rem 0;
       text-align: center;
       a {
@@ -371,7 +405,8 @@ export default {
 .nav-bar ul.year2016 a.year2016,
 .nav-bar ul.year2017 a.year2017,
 .nav-bar ul.year2018 a.year2018,
-.nav-bar ul.year2019 a.year2019 {
+.nav-bar ul.year2019 a.year2019,
+.nav-bar ul.year2020 a.year2020 {
   color: #8aa7ff;
 }
 .nav-bar ul.year2013 li.year2013,
@@ -380,7 +415,8 @@ export default {
 .nav-bar ul.year2016 li.year2016,
 .nav-bar ul.year2017 li.year2017,
 .nav-bar ul.year2018 li.year2018,
-.nav-bar ul.year2019 li.year2019 {
+.nav-bar ul.year2019 li.year2019,
+.nav-bar ul.year2020 li.year2020 {
   border-bottom: 3px solid #8aa7ff;
 }
 
