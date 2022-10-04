@@ -197,23 +197,23 @@ export default {
         },
         {
           img: "js_logo",
-          title: "JAVASCRIPT",
+          title: "JavaScript",
           text: "UI / UX / 인터렉티브"
         },
         {
           img: "handlebars_logo",
-          title: "HANDLEBARS",
-          text: "데이터 바인딩"
+          title: "Handlebars",
+          text: "템플릿 엔진"
         },
         {
           img: "vue_logo",
-          title: "VUE",
+          title: "Vue",
           text: "프레임 워크"
         },
         {
           img: "ps_logo",
-          title: "PHOTOSHOP",
-          text: "레이아웃 디자인"
+          title: "React",
+          text: "라이브러리"
         }
       ],
       products: [

@@ -20,8 +20,8 @@
 
     <transition name="fade">
       <modal-popup v-if="isShow">
-        <button :class="{ on: ep1Show }" @click="ep1ShowBtn()">내가 어떤 사람인지 알아가다</button>
-        <button :class="{ on: ep2Show }" @click="ep2ShowBtn()">경험이 나를 성장 시키다</button>
+        <button :class="[{ on: ep1Show }, $mq]" @click="ep1ShowBtn()">내가 어떤 사람인지 알아가다</button>
+        <button :class="[{ on: ep2Show }, $mq]" @click="ep2ShowBtn()">경험이 나를 성장 시키다</button>
 
         <p v-if="ep1Show">
           어떤 책에 이런 구절이 있습니다.
@@ -356,11 +356,20 @@ export default {
     font-size: 1.8rem;
     color: #777;
     border-bottom: 2px solid #ddd;
+    &.mobile {
+      width: 100%;
+      padding: 1.5rem;
+      margin: .5rem 0;
+      border: 2px solid #ddd;
+    }
   }
   button.on {
     font-weight: 600;
     color: #222;
     border-bottom: 2px solid #222;
+    &.mobile {
+      border: 2px solid #222;
+    }
   }
   p {
     margin: 3rem 0 0 0;
