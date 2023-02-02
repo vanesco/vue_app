@@ -42,7 +42,7 @@
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
-    "updates": "^9.3.3",
+    "updates": "^13.2.8",
     "vue-particles": "^1.0.9",
     "vue-template-compiler": "^2.6.11"
   },
