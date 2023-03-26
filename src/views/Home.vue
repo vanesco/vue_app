@@ -66,22 +66,21 @@
         <img src="../assets/img/introduce_img.png" alt class="visual" :class="$mq" />
 
         <div :class="$mq">
-          <h3 :class="$mq">웹퍼블리싱 { 프론트엔드 }</h3>
+          <h3 :class="$mq">프론트 개발 / 웹퍼블리싱 / UI 개발</h3>
           <p
             :class="$mq"
-          >시각적으로 보이는 것에 의미를 둡니다. 다양한 디바이스와 다양한 사용자에게 최적화된 인터렉티브한 화면을 표현합니다. 사용자가 시각적으로 접근하는 화면의 모든 요소를 기획하고 제작하는 능력 있는 퍼블리셔, 프론트 엔드 개발자가 될 수 있도록 노력합니다.</p>
+          >다양한 디바이스와 다양한 사용자에게 최적화된 인터렉티브한 화면을 제공합니다.</p>
           <button v-if="moreViewBtnSeen" @click="moreViewBtn()">
             더 보기
             <img src="../assets/img/home_arr.png" alt />
           </button>
           <transition name="fade">
             <ul v-if="moreView">
-              <li>- PC용 웹사이트, 모바일 웹사이트, 반응형 웹사이트를 제작합니다.</li>
-              <li>- 표준 DIV코딩과 CSS를 사용한 페이지를 제작합니다.</li>
-              <li>- 웹표준, 접근성을 고려한 페이지를 제작합니다.</li>
-              <li>- 디바이스 환경에 적합한 페이지를 제작합니다.</li>
-              <li>- 사용자 경험과 사용편의성을 고려한 UI/UX에 대해 고민합니다.</li>
-              <li>- 발전하는 웹기술에 맞추어 최신기술을 탐구하고 적용합니다.</li>
+              <li>표준 DIV코딩과 CSS를 사용한 페이지를 제작합니다.</li>
+              <li>웹표준, 접근성을 고려한 페이지를 제작합니다.</li>
+              <li>디바이스 환경에 적합한 페이지를 제작합니다.</li>
+              <li>사용자 경험과 사용 편의성을 고려한 UI를 제작합니다.</li>
+              <li>발전하는 웹기술에 맞추어 최신기술을 탐구하고 적용합니다.</li>
             </ul>
           </transition>
         </div>
@@ -113,11 +112,11 @@
         <img src="../assets/img/bridge_img.jpg" alt class="visual" :class="$mq" />
 
         <div :class="$mq">
-          <h3 :class="$mq">디자이너와 개발자의 다리</h3>
+          <h3 :class="$mq">효율적이고 스마트하게</h3>
           <p
             :class="$mq"
             :style="{backgroundImage: 'url(' + require('../assets/img/' + 'bridge_icon.png') + ')' }"
-          >디자인에서 개발로 넘어가기 전에 디자이너의 의도에 맞게 개발쪽의 의도에 맞게 이슈를 최소화 하여 작업에 보다 쉽고 관리가 용이 할 수 있도록 합니다. 기획, 디자인, 개발 의견을 반영하여 웹표준과 웹접근성을 준수해 디자인을 살리고 개발의 영역을 넓혀주는 역활과 api를 이용하여 데이터를 바인딩해 사용자와 상호작용을 할 수 있도록 합니다.</p>
+          >서비스에 대한 이해와 문제점을 찾고 그에 대한 해결 방법 또는 더 나은 방법을 고민합니다. 각 분야의 구성원들과 문제를 해결하기 위해 문제를 정의하고 다방면의 시각으로 해결책을 찾습니다. 때로는 코딩보다 정책을 바꾸는 것이 효율적일 때도 있습니다.</p>
         </div>
       </div>
 
@@ -158,10 +157,10 @@
         data-aos-duration="500"
       >
         <div>
-          <h3 :class="$mq">UX &amp; UI 디자인적 기획</h3>
+          <h3 :class="$mq">UX와 UI 그리고 구조와 요소</h3>
           <p
             :class="$mq"
-          >사용자 경험, 사용 편의성을 고민해 트렌드를 반영하고 유지 보수가 용이하도록 설계합니다. 전체적인 구조를 만들고 조각을 채워 넣고 언제든지 조각을 삭제 하거나 변경, 수정이 가능 할 수 있도록 기획합니다.</p>
+          >사용자 경험, 사용 편의성을 고민해 트렌드를 반영하고 유지 보수가 용이하도록 설계합니다.<br /> 전체적인 구조를 만들고 조각을 채워 넣고 언제든지 조각을 삭제 하거나 변경, 수정이 가능 할 수 있도록 기획합니다.</p>
         </div>
 
         <img src="../assets/img/advantage_img.png" alt class="visual" :class="$mq" />
@@ -203,56 +202,65 @@ export default {
         {
           img: "handlebars_logo",
           title: "Handlebars",
-          text: "템플릿 엔진"
+          text: "템플릿 렌더링"
         },
         {
           img: "vue_logo",
           title: "Vue",
-          text: "프레임 워크"
+          text: "FRAMEWORK"
         },
         {
-          img: "ps_logo",
+          img: "react_logo",
           title: "React",
-          text: "라이브러리"
-        }
+          text: "FRAMEWORK / LIBRARY"
+        },
+        {
+          img: "git_logo",
+          title: "Git",
+          text: "버전관리"
+        },
+        {
+          img: "jira_logo",
+          title: "Jira",
+          text: "협업"
+        },
       ],
       products: [
         {
           img: "product_01",
-          title: "플래닛팡 기업 홈페이지",
-          text: "반응형 / UI 기획 개발 / 퍼블리싱",
-          url: "http://www.planetpang.co.kr/"
+          title: "쇼핑몰 위지윅 개발",
+          text: "HTML / CSS / JAVASCRIPT",
+          url: "https://office.relaket.com/member/login.php"
         },
         {
           img: "product_02",
-          title: "이슈터 프로모션 사이트",
-          text: "PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱",
-          url: "http://www.ecard21.co.kr/usb_eshooter/index.asp"
+          title: "쇼핑몰 스킨 개발",
+          text: "HTML / CSS / JAVASCRIPT",
+          url: "https://office.relaket.com/member/login.php"
         },
         {
           img: "product_03",
-          title: "카탈로그 프로모션 사이트 ",
+          title: "쇼핑몰 템플릿 통합 ",
+          text: "HTML / CSS / JAVASCRIPT",
+          url: "https://store.weidian.kr/styleSimpleDemo"
+        },
+        {
+          img: "product_04",
+          title: "이커머스 서비스 운영 개발",
+          text: "HTML / CSS / JAVASCRIPT",
+          url: "https://relaket.com/bizhome/features/drop_shipping.php"
+        },
+        {
+          img: "product_05",
+          title: "카탈로그 프로모션 사이트",
           text: "PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱",
           url: "http://ecard21.co.kr/catalog_site/index.asp"
         },
         {
-          img: "product_04",
-          title: "명함천국 온라인 쇼핑몰",
-          text: "PC웹 / UI 개발 / 퍼블리싱",
-          url: "http://www.ecard21.co.kr/"
-        },
-        {
-          img: "product_05",
-          title: "오피스디포 B2B 사이트",
-          text: "PC웹 / 퍼블리싱",
-          url:
-            "http://www.ecard21.co.kr/enterprise_new/office_depot/biz_gnb_product_choice.asp"
-        },
-        {
           img: "product_06",
-          title: "HI FLYER 디지털 전단지",
-          text: "모바일웹 / 디자인 / UI 기획 개발 / 퍼블리싱",
-          url: "http://leehyojun.com/hiFlyer/index.html"
+          title: "이슈터 프로모션 사이트",
+          text: "PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱",
+          url: "http://www.ecard21.co.kr/usb_eshooter/index.asp"
         }
       ]
     };
@@ -380,7 +388,7 @@ export default {
   .introduce {
     text-align: center;
     img.visual {
-      width: 35%;
+      width: 30%;
       &.mobile {
         width: 70%;
       }
@@ -412,7 +420,7 @@ export default {
         }
       }
       button {
-        margin: 3rem 0 0 0;
+        margin: 7rem 0 0 0;
         padding: 1.3rem 2.5rem;
         font-size: 1.4rem;
         border: 1px solid #a9a9a9;
@@ -426,7 +434,7 @@ export default {
         }
       }
       ul {
-        margin: 2rem 0 0 0;
+        margin: 7rem 0 0 0;;
         li {
           font-weight: 300;
         }
@@ -449,7 +457,7 @@ export default {
         padding: 2rem 0;
       }
       li {
-        width: 33.33%;
+        width: 25%;
         margin: 30px 0;
         text-align: center;
         &.mobile {
@@ -553,7 +561,7 @@ export default {
     }
   }
   .products {
-    background: #dadada;
+    background: #ddd;
     ul {
       width: 90%;
       margin: 0 auto;
@@ -573,6 +581,7 @@ export default {
       li {
         position: relative;
         width: 31%;
+        max-height: 333px;
         margin: 3.2rem 0;
         background-repeat: no-repeat;
         background-position: center top;

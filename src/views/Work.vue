@@ -90,6 +90,24 @@ export default {
       overIndex: -1,
       listItem: [
         {
+          img: "relaket_office",
+          title: "릴라켓 오피스",
+          text: "PC, MOBILE 웹 / 퍼블리싱 / UI 개발",
+          url: "https://office.relaket.com/member/login.php"
+        },
+        {
+          img: "relaket_store",
+          title: "릴라켓 스토어",
+          text: "PC, MOBILE 웹 / 퍼블리싱 / UI 개발",
+          url: "https://store.weidian.kr/styleSimpleDemo"
+        },
+        {
+          img: "relaket_bizhome",
+          title: "릴라켓 사이트",
+          text: "PC, MOBILE 웹 / 퍼블리싱 / UI 개발",
+          url: "https://relaket.com/bizhome/features/drop_shipping.php"
+        },
+        {
           img: "wakan",
           title: "와칸",
           text: "PC웹 / 퍼블리싱 / UI 개발",
@@ -306,7 +324,6 @@ export default {
       width: 30%;
       margin: 0 0 5rem 0;
       overflow: hidden;
-      cursor: pointer;
       transition: all 0.3s;
       &.mobile {
         width: 100%;

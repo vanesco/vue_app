@@ -52,7 +52,7 @@
               </dl>
               <dl>
                 <dt>분야</dt>
-                <dd>웹퍼블리싱, 프론트엔드, 기획디자인</dd>
+                <dd>프론트엔드, 웹퍼블리싱</dd>
               </dl>
             </li>
 
@@ -459,5 +459,11 @@ export default {
     -moz-transform: skewX(0deg);
     color: #ffffff;
   }
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 </style>

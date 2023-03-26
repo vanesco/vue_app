@@ -10,7 +10,10 @@
         <p :class="$mq">
           경험은 실수를 거듭해야만 서서히 알게 된다.
           <br />
-          <span :class="$mq">다각적인 시선과 긍정의 마음, 경험하고 있는 것에 의미를 부여하고 세상에 다양한 것들에 관심을 가지는 것들로 배우고 성장합니다.</span>
+          <span :class="$mq"
+            >다각적인 시선과 긍정의 마음, 경험하고 있는 것에 의미를 부여하고
+            세상에 다양한 것들에 관심을 가지는 것들로 배우고 성장합니다.</span
+          >
         </p>
       </div>
     </transition>
@@ -20,15 +23,16 @@
     </transition>
 
     <div class="contents">
-      <div class="nav-bar" :class="{static : isStatic}">
+      <div class="nav-bar" :class="{ static: isStatic }">
         <ul :class="navActive">
-          <li v-for="(nav, index) in navBar" :key="index" :class="nav.id">
+          <li v-for="(nav, index) in navBar" :key="index" :class="[nav.id, $mq]">
             <a
               href="#"
-              v-scroll-to="'#'+ nav.id"
+              v-scroll-to="'#' + nav.id"
               @click="makeActive(nav.id)"
               :class="nav.id"
-            >{{nav.name}}</a>
+              >{{ nav.name }}</a
+            >
           </li>
         </ul>
       </div>
@@ -61,7 +65,11 @@
           data-aos-duration="500"
         >
           <h3>2014</h3>
-          <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2014.png" alt />
+          <img
+            :style="{ border: '1px solid #ddd' }"
+            src="../assets/img/careers_2014.png"
+            alt
+          />
           <dl>
             <dt>KBS 공제회 B2B 사이트</dt>
             <dd>PC웹 / 퍼블리싱</dd>
@@ -69,6 +77,7 @@
             <dd>퍼블리싱</dd>
           </dl>
         </div>
+
         <div
           id="year2015"
           class="year-box left"
@@ -78,7 +87,11 @@
           data-aos-duration="500"
         >
           <h3>2015</h3>
-          <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2015.png" alt />
+          <img
+            :style="{ border: '1px solid #ddd' }"
+            src="../assets/img/careers_2015.png"
+            alt
+          />
           <dl>
             <dt>카탈로그 프로모션 사이트</dt>
             <dd>PC웹 / 디자인 / UI 기획 개발 / 퍼블리싱</dd>
@@ -86,6 +99,7 @@
             <dd>리뉴얼 / UI 개발 / 퍼블리싱 / 유지보수</dd>
           </dl>
         </div>
+
         <div
           id="year2016"
           class="year-box right"
@@ -95,12 +109,17 @@
           data-aos-duration="500"
         >
           <h3>2016</h3>
-          <img :style="{border: '1px solid #ddd'}" src="../assets/img/careers_2016.png" alt />
+          <img
+            :style="{ border: '1px solid #ddd' }"
+            src="../assets/img/careers_2016.png"
+            alt
+          />
           <dl>
             <dt>PC웹 / 오피스디포 B2B 사이트</dt>
             <dd>퍼블리싱</dd>
           </dl>
         </div>
+
         <div
           id="year2017"
           class="year-box left"
@@ -118,6 +137,7 @@
             <dd>퍼블리싱 / 유지보수</dd>
           </dl>
         </div>
+
         <div
           id="year2018"
           class="year-box right"
@@ -127,7 +147,11 @@
           data-aos-duration="500"
         >
           <h3>2018</h3>
-          <img :style="{width: '40%'}" src="../assets/img/careers_2018.png" alt />
+          <img
+            :style="{ width: '40%' }"
+            src="../assets/img/careers_2018.png"
+            alt
+          />
           <dl>
             <dt>HI FLYER 디지털 전단지</dt>
             <dd>모바일웹 / 디자인 / UI 기획 개발 / 퍼블리싱</dd>
@@ -135,6 +159,7 @@
             <dd>UI 개발 / 퍼블리싱</dd>
           </dl>
         </div>
+
         <div
           id="year2019"
           class="year-box left"
@@ -150,6 +175,7 @@
             <dd>반응형 / UI 기획 개발 / 퍼블리싱</dd>
           </dl>
         </div>
+
         <div
           id="year2020"
           class="year-box right"
@@ -173,6 +199,7 @@
             <dd>하이브리드앱 / 퍼블리싱</dd>
           </dl>
         </div>
+
         <div
           id="year2021"
           class="year-box left"
@@ -182,12 +209,16 @@
           data-aos-duration="500"
         >
           <h3>2021</h3>
-          <img src="../assets/img/careers_2020.png" alt />
+          <img src="../assets/img/careers_2021.png" alt />
           <dl>
-            <dt>2021</dt>
-            <dd>PC웹 / 모바일웹 / 퍼블리싱 / UI 개발</dd>
+            <dt>릴라켓 관리자 사이트</dt>
+            <dd>구성요소 컴포넌트화</dd>
+            <dt>릴라켓 쇼핑몰</dt>
+            <dd>쇼핑몰 고도화</dd>
+            <dd>쇼핑몰 템플릿 통합</dd>
           </dl>
         </div>
+
         <div
           id="year2022"
           class="year-box right"
@@ -197,16 +228,33 @@
           data-aos-duration="500"
         >
           <h3>2022</h3>
-          <img src="../assets/img/careers_2020.png" alt />
+          <img src="../assets/img/careers_2022.png" alt />
           <dl>
-            <dt>2022</dt>
-            <dd>PC웹 / 모바일웹 / 퍼블리싱 / UI 개발</dd>
+            <dt>릴라켓 쇼핑몰</dt>
+            <dd>쇼핑몰 스킨 개발</dd>
+            <dd>쇼핑몰 위지윅 개발</dd>
+          </dl>
+        </div>
+
+        <div
+          id="year2023"
+          class="year-box right"
+          :class="$mq"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
+          <h3>2023</h3>
+          <img src="../assets/img/careers_2023.png" alt />
+          <dl>
+            <dt>릴라켓 해외구매대행 서비스</dt>
+            <dd>해외구매대행 서비스 개발</dd>
           </dl>
         </div>
       </div>
     </div>
 
-    <div class="bg-year" v-if="bgShow" :class="$mq">{{year}}</div>
+    <div class="bg-year" v-if="bgShow" :class="$mq">{{ year }}</div>
 
     <main-footer />
   </div>
@@ -228,6 +276,7 @@ export default {
         { name: "2020", id: "year2020" },
         { name: "2021", id: "year2021" },
         { name: "2022", id: "year2022" },
+        { name: "2023", id: "year2023" },
       ],
       navActive: "year2013",
       isStatic: false,
@@ -241,8 +290,9 @@ export default {
       year2020Offset: "",
       year2021Offset: "",
       year2022Offset: "",
+      year2023Offset: "",
       bgShow: false,
-      year: 2013
+      year: 2013,
     };
   },
   created() {
@@ -261,6 +311,7 @@ export default {
     this.year2020Offset = document.getElementById("year2020").offsetTop - 250;
     this.year2021Offset = document.getElementById("year2021").offsetTop - 250;
     this.year2022Offset = document.getElementById("year2022").offsetTop - 250;
+    this.year2023Offset = document.getElementById("year2023").offsetTop - 250;
 
     let bg = document.querySelector("article");
     $("body").on("mousewheel", function(e) {
@@ -333,11 +384,15 @@ export default {
         this.year = 2022;
         this.navActive = "year2022";
       }
-    }
+      if (this.year2023Offset < scrollY) {
+        this.year = 2023;
+        this.navActive = "year2023";
+      }
+    },
   },
   destroyed() {
     window.removeEventListener("scroll", this.yearScroll);
-  }
+  },
 };
 </script>
 
@@ -421,9 +476,12 @@ export default {
     align-items: center;
     align-content: center;
     li {
-      width: 10%;
+      width: 9%;
       padding: 1rem 0;
       text-align: center;
+      &.mobile {
+        width: 17%;
+      }
       a {
         font-weight: 600;
         color: #fff;
@@ -448,7 +506,8 @@ export default {
 .nav-bar ul.year2019 a.year2019,
 .nav-bar ul.year2020 a.year2020,
 .nav-bar ul.year2021 a.year2021,
-.nav-bar ul.year2022 a.year2022 {
+.nav-bar ul.year2022 a.year2022,
+.nav-bar ul.year2023 a.year2023 {
   color: #8aa7ff;
 }
 .nav-bar ul.year2013 li.year2013,
@@ -460,7 +519,8 @@ export default {
 .nav-bar ul.year2019 li.year2019,
 .nav-bar ul.year2020 li.year2020,
 .nav-bar ul.year2021 li.year2021,
-.nav-bar ul.year2022 li.year2022 {
+.nav-bar ul.year2022 li.year2022,
+.nav-bar ul.year2023 li.year2023 {
   border-bottom: 3px solid #8aa7ff;
 }
 

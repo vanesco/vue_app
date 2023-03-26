@@ -46,6 +46,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #000;
+  border-radius: 10px;
   opacity: 0.3;
   z-index: 100;
   transition: all 0.5s;
