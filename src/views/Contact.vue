@@ -256,6 +256,7 @@ export default {
       font-size: 1.6rem;
       border-top: 3px solid #363636;
       &.mobile {
+        padding: 0 0 3rem 0;
         border-top: none;
       }
       li {

@@ -28,7 +28,7 @@
           </ul>
 
           <div class="mobileNavUtil" v-if="mobileNavUtil">
-            <p>Copyright 2019 © LEEHYOJUN All right reserved.</p>
+            <p>Copyright 2020 © LEEHYOJUN All right reserved.</p>
           </div>
         </nav>
       </transition>

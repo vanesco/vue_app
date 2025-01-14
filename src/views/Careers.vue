@@ -238,7 +238,7 @@
 
         <div
           id="year2023"
-          class="year-box right"
+          class="year-box left"
           :class="$mq"
           data-aos="fade-up"
           data-aos-offset="250"
@@ -247,10 +247,27 @@
           <h3>2023</h3>
           <img src="../assets/img/careers_2023.png" alt />
           <dl>
-            <dt>릴라켓 해외구매대행 서비스</dt>
+            <dt>릴라켓 해외구매대행 서비스 개발</dt>
             <dd>해외구매대행 서비스 개발</dd>
           </dl>
         </div>
+
+        <div
+          id="year2024"
+          class="year-box right"
+          :class="$mq"
+          data-aos="fade-up"
+          data-aos-offset="250"
+          data-aos-duration="500"
+        >
+          <h3>2024</h3>
+          <img src="../assets/img/careers_2023.png" alt />
+          <dl>
+            <dt>릴라켓 해외구매대행 서비스 운영</dt>
+            <dd>해외구매대행 서비스 운영</dd>
+          </dl>
+        </div>
+
       </div>
     </div>
 
@@ -277,6 +294,7 @@ export default {
         { name: "2021", id: "year2021" },
         { name: "2022", id: "year2022" },
         { name: "2023", id: "year2023" },
+        { name: "2024", id: "year2024" },
       ],
       navActive: "year2013",
       isStatic: false,
@@ -291,6 +309,7 @@ export default {
       year2021Offset: "",
       year2022Offset: "",
       year2023Offset: "",
+      year2024Offset: "",
       bgShow: false,
       year: 2013,
     };
@@ -312,6 +331,7 @@ export default {
     this.year2021Offset = document.getElementById("year2021").offsetTop - 250;
     this.year2022Offset = document.getElementById("year2022").offsetTop - 250;
     this.year2023Offset = document.getElementById("year2023").offsetTop - 250;
+    this.year2024Offset = document.getElementById("year2024").offsetTop - 250;
 
     let bg = document.querySelector("article");
     $("body").on("mousewheel", function(e) {
@@ -387,6 +407,10 @@ export default {
       if (this.year2023Offset < scrollY) {
         this.year = 2023;
         this.navActive = "year2023";
+      }
+      if (this.year2024Offset < scrollY) {
+        this.year = 2024;
+        this.navActive = "year2024";
       }
     },
   },
@@ -472,15 +496,15 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
     li {
-      width: 9%;
+      width: 8.3%;
       padding: 1rem 0;
       text-align: center;
       &.mobile {
-        width: 17%;
+        width: 20%;
       }
       a {
         font-weight: 600;
@@ -507,7 +531,8 @@ export default {
 .nav-bar ul.year2020 a.year2020,
 .nav-bar ul.year2021 a.year2021,
 .nav-bar ul.year2022 a.year2022,
-.nav-bar ul.year2023 a.year2023 {
+.nav-bar ul.year2023 a.year2023,
+.nav-bar ul.year2023 a.year2024 {
   color: #8aa7ff;
 }
 .nav-bar ul.year2013 li.year2013,
@@ -520,7 +545,8 @@ export default {
 .nav-bar ul.year2020 li.year2020,
 .nav-bar ul.year2021 li.year2021,
 .nav-bar ul.year2022 li.year2022,
-.nav-bar ul.year2023 li.year2023 {
+.nav-bar ul.year2023 li.year2023,
+.nav-bar ul.year2023 li.year2024 {
   border-bottom: 3px solid #8aa7ff;
 }
 
