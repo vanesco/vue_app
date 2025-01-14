@@ -66,7 +66,7 @@
         <img src="../assets/img/introduce_img.png" alt class="visual" :class="$mq" />
 
         <div :class="$mq">
-          <h3 :class="$mq">프론트 개발 / 웹퍼블리싱 / UI 개발</h3>
+          <h3 :class="$mq">웹퍼블리싱 / UI 개발</h3>
           <p
             :class="$mq"
           >다양한 디바이스와 다양한 사용자에게 최적화된 인터렉티브한 화면을 제공합니다.</p>
@@ -204,16 +204,16 @@ export default {
           title: "Handlebars",
           text: "템플릿 렌더링"
         },
-        {
-          img: "vue_logo",
-          title: "Vue",
-          text: "FRAMEWORK"
-        },
-        {
-          img: "react_logo",
-          title: "React",
-          text: "FRAMEWORK / LIBRARY"
-        },
+        // {
+        //   img: "vue_logo",
+        //   title: "Vue",
+        //   text: "FRAMEWORK"
+        // },
+        // {
+        //   img: "react_logo",
+        //   title: "React",
+        //   text: "FRAMEWORK / LIBRARY"
+        // },
         {
           img: "git_logo",
           title: "Git",
@@ -423,6 +423,7 @@ export default {
         margin: 7rem 0 0 0;
         padding: 1.3rem 2.5rem;
         font-size: 1.4rem;
+        color: #222;
         border: 1px solid #a9a9a9;
         transition: all 0.2s;
         img {
@@ -457,7 +458,7 @@ export default {
         padding: 2rem 0;
       }
       li {
-        width: 25%;
+        width: 33%;
         margin: 30px 0;
         text-align: center;
         &.mobile {
@@ -643,8 +644,9 @@ export default {
         }
       }
       p {
-        width: 45%;
+        width: 60%;
         margin: 2rem auto 3rem auto;
+        word-break: keep-all;
         color: #666;
         &.mobile {
           width: 90%;
